@@ -8,7 +8,7 @@ jobs:
       matrix:
         os: [windows-latest, ubuntu-latest, macos-latest]
         configuration: [Debug, Release]
-    uses: SAPTeamDEV/Gawe/.github/workflows/blank.yml@main
+    uses: SAPTeamDEV/Gawe/.github/workflows/blank.yml@master
     with:
       os: ${{ matrix.os }}
       configuration: ${{ matrix.configuration }}

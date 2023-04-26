@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="sapteam.commontk" Version="2.3.3" />
+    <PackageReference Include="sapteam.commontk" Version="2.3.11" />
   </ItemGroup>
 
 </Project>

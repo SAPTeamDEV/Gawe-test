@@ -4,11 +4,4 @@ on: [pull_request, push]
 
 jobs:
   build:
-    strategy:
-      matrix:
-        os: [windows-latest, ubuntu-latest, macos-latest]
-        configuration: [Debug, Release]
-    uses: SAPTeamDEV/Gawe/.github/workflows/blank.yml@master
-    with:
-     os: ${{ matrix.os }}
-     configuration: ${{ matrix.configuration }}
+    uses: SAPTeamDEV/Gawe/.github/workflows/dotnet.yml@master

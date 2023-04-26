@@ -10,5 +10,5 @@ jobs:
         configuration: [Debug, Release]
     uses: SAPTeamDEV/Gawe/.github/workflows/blank.yml@master
     with:
-      os: ${{ matrix.os }}
-      configuration: ${{ matrix.configuration }}
+     os: ${{ matrix.os }}
+     configuration: ${{ matrix.configuration }}

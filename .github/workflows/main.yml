@@ -6,7 +6,8 @@ on:
   pull_request:
     branches: [master]
     
-permissions: write-all
+permissions: read-all|write-all
+
 
 jobs:
   build:

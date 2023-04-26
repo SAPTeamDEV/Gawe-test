@@ -11,3 +11,5 @@ permissions: write-all
 jobs:
   build:
     uses: SAPTeamDEV/Gawe/.github/workflows/dotnet.yml@master
+    secrets:
+      USER_TOKEN: ${{ secrets.USER_TOKEN }}

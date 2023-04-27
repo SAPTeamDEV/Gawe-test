@@ -24,5 +24,5 @@ jobs:
   build:
     uses: SAPTeamDEV/Gawe/.github/workflows/dotnet.yml@master
     with:
-      nuget-deploy: ${{ contains(inputs.nuget-deploy, 'e') }} # a workaround for runs outside of dispatch
+      nuget-deploy: ${{ contains(inputs.nuget-deploy, 'true') }} # a workaround for runs outside of dispatch
     secrets: inherit

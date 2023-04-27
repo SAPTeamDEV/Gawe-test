@@ -1,6 +1,12 @@
 name: .NET CI
 
 on:
+  workflow_dispatch:
+    inputs:
+      nuget-deploy:
+        description: Deploy package to NuGet gallery
+        type: boolean
+        default: true
   push:
     branches: [master, dev]
   pull_request:

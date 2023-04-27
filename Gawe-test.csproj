@@ -8,8 +8,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="sapteam.commontk" Version="2.3.11" />
-  </ItemGroup>
-
 </Project>

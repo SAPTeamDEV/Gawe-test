@@ -2,7 +2,7 @@ name: .NET CI
 
 on:
   push:
-    branches: [master]
+    branches: [master, dev]
   pull_request:
     branches: [master]
     
@@ -17,4 +17,6 @@ permissions:
 jobs:
   build:
     uses: SAPTeamDEV/Gawe/.github/workflows/dotnet.yml@master
+    with:
+      nuget-deploy: false
     secrets: inherit

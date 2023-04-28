@@ -10,6 +10,11 @@ on:
   push:
     branches: [master, dev]
   pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
     branches: [master]
     
 permissions:

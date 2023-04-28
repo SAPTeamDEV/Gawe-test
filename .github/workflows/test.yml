@@ -1,0 +1,11 @@
+on:
+    pull_request:
+        types: closed
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - run: |
+                echo ${{github.event.pull_request.merged_by}}
+                echo ${{github.event.pull_request}}

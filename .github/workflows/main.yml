@@ -24,5 +24,6 @@ jobs:
   build:
     uses: SAPTeamDEV/Gawe/.github/workflows/dotnet.yml@master
     with:
+      deploy-path: ''
       nuget-deploy: ${{ contains(inputs.nuget-deploy, 'true') }} # a workaround for runs outside of dispatch
     secrets: inherit

@@ -3,6 +3,10 @@ name: .NET CI
 on:
   workflow_dispatch:
     inputs:
+      deploy:
+        description: Create and Deploy package
+        type: boolean
+        default: true
       nuget-deploy:
         description: Deploy package to NuGet gallery
         type: boolean
@@ -24,6 +28,7 @@ jobs:
   build:
     uses: SAPTeamDEV/Gawe/.github/workflows/dotnet.yml@master
     with:
+      deploy: ${{ contains(inputs.deploy, 'true') }}
       deploy-path: ''
       nuget-deploy: ${{ contains(inputs.nuget-deploy, 'true') }} # a workaround for runs outside of dispatch
     secrets: inherit
